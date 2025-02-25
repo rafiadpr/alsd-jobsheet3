@@ -4,13 +4,8 @@ public class DataDosen23 {
     public void dataSemuaDosen(Dosen23[] arrayDosen23s) {
         int nomor = 1;
         for (Dosen23 dosen23 : arrayDosen23s) {
-            System.out.println("Data dosen ke-" + nomor);
-            System.out.println("Kode         : " + dosen23.kode);
-            System.out.println("Nama         : " + dosen23.nama);
-            System.out.println("SKS          : " + (dosen23.jenisKelamin ? "Pria" : "Wanita"));
-            System.out.println("Jumlah Jam   : " + dosen23.usia);
-            System.out.println("=========================================");
-            nomor++;
+            System.out.println("Data dosen ke-" + nomor++);
+            dosen23.cetakInfo();
         }
     }
 

@@ -25,7 +25,12 @@ public class DosenDemo23 {
             System.out.println("=========================================");
             arrayOfDosen[i] = new Dosen23(kode, nama, jenisKelamin, usia);
         }
-        
+
+        // for (int i = 0; i < jumlahDosen; i++) {
+        //     System.out.println("Data dosen ke-" + (i + 1));
+        //     arrayOfDosen[i].cetakInfo();
+        // }
+
         DataDosen23 dataDosen = new DataDosen23();
         dataDosen.dataSemuaDosen(arrayOfDosen);
         dataDosen.jumlahDosenPerJenisKelamin(arrayOfDosen);
